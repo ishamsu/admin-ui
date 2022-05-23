@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from './axios/default';
 import { getAllUsers } from './api-config/userAction';
 import Home from './pages/Home/Home';
 import FallBack from './pages/FallBack/FallBack';
-import { EmptyIcon, NoDataFoundIcon, SpinnerIcon } from './assets/images/const';
+import { EmptyIcon, SpinnerIcon } from './assets/images/const';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
 function App() {
@@ -13,11 +12,11 @@ function App() {
   const [apiData, setApiData] = useState([]);
 
   useEffect(() => {
-    res().then((da) => {
-      if (da) {
-        setData(da?.data)
-        setApiData(da?.data)
-        console.log("getAllEmails", da.data)
+    FetchgetAllUsers().then((res) => {
+      if (res) {
+        setData(res?.data)
+        setApiData(res?.data)
+        console.log("getAllUsers", res.data)
       }
       else {
         setData("error")
@@ -25,9 +24,9 @@ function App() {
     })
   }, []);
 
-  const res = async () => {
-    let h = await getAllUsers()
-    return h
+  const FetchgetAllUsers = async () => {
+    let res = await getAllUsers()
+    return res
   }
 
   return (
