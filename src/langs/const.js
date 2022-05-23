@@ -2,10 +2,10 @@
 
 const text={
     en: {   
-       'navBar': ["UnRead", "Read", "Favourite"],
+       'btnLabel': "save",
     },
     ml: {
-        'navBar': ["വായിക്കാത്തത്", "വായിച്ചു", "പ്രിയപ്പെട്ടത്"]
+        'btnLabel': "സമർപ്പിക്കുക "
     },
    
     }
