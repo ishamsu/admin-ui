@@ -1,0 +1,20 @@
+.input{
+    width: auto;
+    border: 2px solid ;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    border: transparent;
+    outline: none;
+}
+.input-bottom-line{
+    border-bottom: 1px solid var(--dark);
+
+}
+.input--search{
+border-radius: 20px;
+border: 1px solid var(--gray);
+width: 50%;
+height: 30px;
+
+}

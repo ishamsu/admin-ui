@@ -1,0 +1,50 @@
+/* BEM(Block,element,modifier) convention is followed for writing class name.
+vist - http://getbem.com/ for more info
+*/
+
+/* defualt button style */
+
+.button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* circle button style */
+
+  .button--circle{
+      width: 33px;
+      height: 31px;
+      border-radius: 50px;
+  }
+  .button--primary{
+    height: 40px;
+    padding: 0px 20px 0px;
+    background-color: var(--accent);
+    color: var(--white);
+  }
+  .button--danger{
+      height: 40px;
+      padding: 0px 20px 0px;
+      background-color: var(--danger);
+      color: var(--white);
+  }
+  .button--active {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    background: var(--white);
+  }
+  .button--inactive {
+    color: var(--white);
+    background: var(--accent);
+  }
+
+  .button--disable{
+    background-color: var(--disableBg);
+    color: var(--disableText) ;
+    cursor: not-allowed;
+  }

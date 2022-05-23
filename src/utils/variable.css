@@ -1,0 +1,14 @@
+
+/* color styles are defined here. change here to switch themes */
+
+:root {
+    --danger: #e16162;
+    --dark: #13253a;
+    --white: #fffffe;
+    --text: #0d0d0d;
+    --accent: #3da9fc;
+    --disableBg : #f8f8f8;
+    --disableText: #afafaf;
+    --gray: #2a2a2a;
+  }
+  

@@ -1,0 +1,10 @@
+.pagination__wrapper{
+background-color: red;
+display: flex;
+justify-content: center;
+
+}
+.btn__wrapper{
+    position: fixed;
+    bottom: 60px;
+}
