@@ -189,7 +189,7 @@ const Home = ({ data, rowsPerPage, setData, apiData }) => {
             <div className="btn__wrapper">
                 <ErrorBoundary>
              
-                {data?.length !== 0 &&   <Button
+                {data?.length !== 0 && checked.length>=1 &&  <Button
                         isDisabled={false}
                         className={"button--danger"}
                         label={checked.length >= 1 ? `Delete selected` : "Delete"}
