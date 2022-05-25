@@ -29,6 +29,8 @@
 
 .table__row-items {
   cursor: auto;
+  /* border-bottom-style: ridge;
+  border-bottom-width: 1px; */
 }
 
 .table__row-items:nth-child(odd) {

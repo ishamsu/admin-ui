@@ -73,7 +73,7 @@ const TableWrapper = ({ tbodyData, setData, openModal, checked, setChecked, data
                                 <Button isDisabled={false} className="button--circle" icon={<EditIcon color="gray" />} onClick={() => {
                                     openModal(el.id)
                                 }} />
-                                <Button isDisabled={false} className="button--circle" icon={<DeleteIcon color="red" />}
+                                <Button isDisabled={false} className="button--circle" icon={<DeleteIcon color="#e16162" />}
                                     onClick={() => {
                                         let tempSliceData = sliceData(data, el.id)
                                         setData([...tempSliceData])

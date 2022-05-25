@@ -31,19 +31,18 @@ function App() {
 
   return (
     <div className="main">
-      {/* <div className=''> */}
       {data !== "error" && data !== "loading"
         ?
         <ErrorBoundary errMessage={"Home"}>
-   <Home apiData={apiData} data={data} setData={setData} rowsPerPage={10} />
+          <Home apiData={apiData} data={data} setData={setData} rowsPerPage={10} />
         </ErrorBoundary>
-     
+
         :
         <>
           <FallBack
-            heading={data === "loading" ? "Loading...."  : "Ooops! 👀"}
-            icon={data === "loading" ? <SpinnerIcon /> :  <EmptyIcon />
-              }
+            heading={data === "loading" ? "Loading...." : "Ooops! 👀"}
+            icon={data === "loading" ? <SpinnerIcon /> : <EmptyIcon />
+            }
             subHeading={"Something is wrong!... Please try again."}
           />
         </>

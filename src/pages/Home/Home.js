@@ -3,7 +3,7 @@ import usePagination from "../../hooks/usePagination";
 import Pagination from "../../modules/Pagination/Pagination";
 import "./home.css"
 import Button from "../../components/Button/Button";
-import { DeleteIcon, NoDataFoundIcon } from "../../assets/images/const";
+import { DeleteIcon, NoDataFoundIcon, SearchIcon } from "../../assets/images/const";
 import Input from "../../components/Input/Input";
 import Label from "../../components/Label/Label";
 import Popup from "../../components/Popup/Popup";
@@ -150,7 +150,9 @@ const Home = ({ data, rowsPerPage, setData, apiData }) => {
                         type="text"
                         placeholder="Search by name, email or role"
                         name="search"
-                        handleChange={handleChange} />
+                        handleChange={handleChange}
+                        icon= {<SearchIcon color="white"/>}
+                        />
                 </ErrorBoundary>
 
             </div>

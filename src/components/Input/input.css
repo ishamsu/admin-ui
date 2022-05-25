@@ -1,20 +1,45 @@
-.input{
-    width: auto;
-    border: 2px solid ;
+.input {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: 300;
+    width: clamp(200px, 56vw, 500px);
+    border: 2px solid;
     padding-left: 10px;
     padding-bottom: 5px;
     padding-right: 50px;
     border: transparent;
     outline: none;
 }
-.input-bottom-line{
+
+.input-bottom-line {
     border-bottom: 1px solid var(--dark);
 
 }
-.input--search{
-border-radius: 20px;
-border: 1px solid var(--gray);
-width: 50%;
-height: 30px;
 
+.input--search {
+    border-radius: 25px;
+    border: 1px solid var(--disableText);
+    height: 35px;
+
+}
+
+.input__wrapper {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.input--icon {
+    background: var(--accent);
+    border-radius: 37px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: 4px;
 }
